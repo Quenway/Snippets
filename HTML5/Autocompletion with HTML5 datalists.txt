@@ -1,0 +1,11 @@
+Using the datalist element, HTML5 allows you to create a list of data to autocomplete a input field. Super useful! Here is a sample code to re-use in your own projects.
+
+<input name="frameworks" list="frameworks" />
+
+<datalist id="frameworks">
+	<option value="MooTools">
+	<option value="Moobile">
+	<option value="Dojo Toolkit">
+	<option value="jQuery">
+	<option value="YUI">
+</datalist>
