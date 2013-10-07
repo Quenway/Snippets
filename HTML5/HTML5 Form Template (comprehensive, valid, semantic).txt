@@ -1,0 +1,215 @@
+Most of the form elements have been accounted for. This form setup, I believe, is ideal for CSS, as it has sufficient generality (styling the file input based on its block and parent div) and many demarcations for flexibility and styling. I may update it over time. Eventually I will provide a list of the relevant CSS classes, etc.
+
+<section class="html-5-form">
+	
+	<section class="form-error-message-block">
+		<p id="form-error-msg">Default error message.</p>
+	</section>
+	<!-- / form-error-message-block -->
+	
+	<section class="form-block">
+	
+		<form id="form-1" action="/" method="post" enctype="" dir="ltr" xml:lang="en">
+			
+			<fieldset>
+			
+				<legend>Form Legend Title</legend>
+				
+				<div class="form-element-block input required">
+					<div class="form-label">
+						<label for="input-elem-1">Input Element 1*</label>
+					</div>
+					<div class="form-elem">
+						<input id="input-elem-1" name="input-elem-1" type="text" size="20" value="" maxlength="40" autofocus required />
+					</div>
+				</div>
+				<!-- / input (required) -->
+				
+				<div class="form-element-block input">
+					<div class="form-label">
+						<label for="input-elem-11">Input Element 11</label>
+					</div>
+					<div class="form-elem">
+						<input id="input-elem-11" name="input-elem-11" type="text" size="20" value="" maxlength="40" />
+					</div>
+				</div>
+				<!-- / input -->
+				
+				<div class="form-element-block email required">
+					<div class="form-label">
+						<label for="email-elem-12">E-mail Element 12*</label>
+					</div>
+					<div class="form-elem">
+						<input id="email-elem-12" name="email-elem-12" type="email" size="20" required />
+					</div>
+				</div>
+				<!-- / email -->
+				
+				<div class="form-element-block url">
+					<div class="form-label">
+						<label for="url-elem-13">Web address Element 13</label>
+					</div>
+					<div class="form-elem">
+						<input id="url-elem-13" name="url-elem-13" type="url" size="30" />
+					</div>
+				</div>
+				<!-- / url -->
+				
+				<div class="form-element-block date">
+					<div class="form-label">
+						<label for="date-elem-14">Date Element 14</label>
+					</div>
+					<div class="form-elem">
+						<input id="date-elem-14" name="date-elem-14" type="date" />
+					</div>
+				</div>
+				<!-- / date -->
+				
+				<div class="form-element-block range">
+					<div class="form-label">
+						<label for="range-elem-15">Range Element 15</label>
+					</div>
+					<div class="form-elem">
+						<input id="range-elem-15" name="range" type="range" min="1" max="10" value="0">
+						<output name="range-elem-15-result" onforminput="value=range.value">0</output>
+					</div>
+				</div>
+				<!-- / range -->
+				
+				<div class="form-element-block datalist">
+					<div class="form-label">
+						<label for="datalist-elem-16">Datalist Element 16</label>
+					</div>
+					<div class="form-elem">
+						<input id="datalist-elem-16" name="datalist-elem-16" list="datalist" type="text" size="30" />
+						<datalist id="datalist">
+							<option label="Data Item 1" value="Data Item 1">
+							<option label="Data Item 2" value="Data Item 2">
+							<option label="Data Item 3" value="Data Item 3">
+						</datalist>
+					</div>
+				</div>
+				<!-- / datalist -->
+				
+				<div class="form-element-block number">
+					<div class="form-label">
+						<label for="number-elem-10">Number Element 10</label>
+					</div>
+					<div class="form-elem">
+						<input id="number-elem-10" name="number-elem-10" type="number" size="20" min="18" max="25" />
+					</div>
+				</div>
+				<!-- / number -->
+				
+				<div class="form-element-block textarea">
+					<div class="form-label">
+						<label for="textarea-elem-2">Textarea Element 2</label>
+					</div>
+					<div class="form-elem">
+						<textarea id="textarea-elem-2" name="textarea-elem-2" rows="5" cols="20"></textarea>
+					</div>
+				</div>
+				<!-- / textarea -->
+				
+				<div class="form-element-block file">
+					<div class="form-elem">
+						<input id="file-elem-9" name="file-elem-9" type="file" />
+					</div>
+				</div>
+				<!-- / file -->
+				
+				<div class="form-element-block radio">
+					<div class="form-label">
+						<label>Radio Element 3</label>
+					</div>
+					<div class="form-elem">
+						<ul>
+							<li>
+								<input id="radio-elem-3-1" name="radio-elem-3" type="radio" value="radio-elem-3-1" checked="checked" />
+								<label for="radio-elem-3-1">Radio Value 1</label></li>
+							<li>
+								<input id="radio-elem-3-2" name="radio-elem-3" type="radio" value="radio-elem-3-2" />
+								<label for="radio-elem-3-2">Radio Value 2</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- / radio -->
+				
+				<div class="form-element-block checkbox">
+					<div class="form-label">
+						<label>Checkbox Element 8</label>
+					</div>
+					<div class="form-elem">
+						<ul>
+							<li>
+								<input id="checkbox-elem-8-1" name="checkbox-elem-8" type="checkbox" value="checkbox-elem-8-1" checked="checked" />
+								<label for="checkbox-elem-8-1">Checkbox Value 1</label>
+							</li>
+							<li>
+								<input id="checkbox-elem-8-2" name="checkbox-elem-8" type="checkbox" value="checkbox-elem-8-2" />
+								<label for="checkbox-elem-8-2">Checkbox Value 2</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- / checkbox -->
+				
+				<div class="form-element-block select">
+					<div class="form-label">
+						<label for="select-elem-4">Select Element 4</label>
+					</div>
+					<div class="form-elem">
+						<select id="select-elem-4" name="select-elem-4" size="1">
+							<option value="" selected="selected">Please select an item</option>
+							<option value="1">Select Option 1</option>
+							<option value="2">Select Option 2</option>
+							<option value="3">Select Option 3</option>
+						</select>
+					</div>
+				</div>
+				<!-- / select -->
+				
+				<div class="form-element-block select-static">
+					<div class="form-label">
+						<label for="select-static-elem-5">Select Static Element 5</label>
+					</div>
+					<div class="form-elem">
+						<select id="select-static-elem-5" name="select-static-elem-5" size="3">
+							<option value="1">Select Option 1</option>
+							<option value="2">Select Option 2</option>
+							<option value="3">Select Option 3</option>
+							<option value="3">Select Option 4</option>
+						</select>
+					</div>
+				</div>
+				<!-- / select-static -->
+				
+				<div class="form-element-block submit">
+					<div class="form-elem">
+						<button id="submit-elem-6" type="submit">Submit</button>
+					</div>
+				</div>
+				<!-- / submit -->
+				
+				<div class="form-element-block reset">
+					<div class="form-elem">
+						<input id="reset-elem-7" type="reset" value="Reset" />
+					</div>
+				</div>
+				<!-- / reset -->
+				
+			</fieldset>
+
+		</form>
+		
+	</section>
+	<!-- / form-block -->
+	
+	<aside class="form-commentary-block">
+		<h1>Form Commentary Block</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in felis dui, eu iaculis ante.</p>
+	</aside>
+	<!-- / form-commentary-block -->
+	
+</section>
