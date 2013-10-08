@@ -1,0 +1,13 @@
+File inputs can have an attribute of "multiple" which then allows multiple files to be selected in the file section dialog box. Firefox 3.6+ and WebKit browsers only are supporting it so far. Unfortunately the "multiple files" need to be within the same folder, as there is no interface for selecting one, moving folders, and selecting another.
+
+<form method="post" action="upload.php" enctype="multipart/form-data">
+  <input name='uploads[]' type="file" multiple>
+  <input type="submit" value="Send">
+</form>
+Note that the "name" of the file input has brackets at the end of it. This isn't required per the spec but is required to process the multiple files.
+
+In PHP, you can then loop through the data as an array:
+
+foreach ($_FILES['uploads']['name'] as $filename) {
+    echo '<li>' . $filename . '</li>';
+}
