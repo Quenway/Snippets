@@ -12,7 +12,7 @@ mysql_select_db("employees");
 $order = "INSERT INTO data_employees
             (name, address)
             VALUES
-            ('Edvin Antonov',
+            ('Edvins Antonovs',
             'United Kingdom')";
 
 

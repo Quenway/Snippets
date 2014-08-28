@@ -1,4 +1,0 @@
-With the release of the iPhone, Apple introduced a quick way to create call and sms links. Here is a sample code to keep in your snippet library.
-
-<a href="tel:1-408-555-5555">1-408-555-5555</a>
-<a href="sms:1-408-555-1212">New SMS Message</a>
