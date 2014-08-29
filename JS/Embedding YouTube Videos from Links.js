@@ -21,3 +21,13 @@ function embedYoutube(link, ops) {
     ' "src="http://www.youtube.com/embed/' + id + '?' + o.params +
     '&amp;wmode=transparent" frameborder="0" />';
 }
+
+/*
+Usage:
+Check out the Youtube API parameters for more info on params.
+*/
+
+embedYoutube(
+  'https://www.youtube.com/watch?v=JaAWdljhD5o', 
+  { params: 'theme=light&fs=0' }
+);
