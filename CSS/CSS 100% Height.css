@@ -1,0 +1,23 @@
+/*One of the most confusing things to me when I was learning CSS was the height property.
+Setting height to be 100% almost never works as intended.
+I later learned that the element’s parent needs to have a defined height for it to work properly.
+This is true all the way up the DOM – every parent element needs to have an explicit height.
+This is problematic, since in the responsive world, we often have no idea how our content will be re-sized across devices,
+and things need to stretch, grow, and shrink accordingly. Luckily, we can fake this 
+using absolute positioning and the top / bottom properties:
+*/
+
+.fullheight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/*
+When the browser tries to stick the element to the top and bottom at the same time,
+the result is a perfect box that completely fills its parent’s height.
+Just like with any absolutely positioned element, its parent needs to be positioned for this to work.
+If it isn’t already, the simplest way to do this is to set the parent to have position: relative;
+
+This trick also works with width; use the CSS left and right properties instead.
+*/
