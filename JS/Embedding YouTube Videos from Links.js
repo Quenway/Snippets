@@ -24,7 +24,7 @@ function embedYoutube(link, ops) {
 
 /*
 Usage:
-Check out the Youtube API parameters for more info on params.
+Check out the Youtube API parameters (https://developers.google.com/youtube/player_parameters) for more info on params.
 */
 
 embedYoutube(
