@@ -1,0 +1,10 @@
+/*
+This clearfix code has been around the Web for years circulating amongst savvy web developers.
+You should apply this class onto a container which holds floating elements.
+This will ensure any content which comes afterwards will not float but instead be pushed down and cleared.
+*/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
