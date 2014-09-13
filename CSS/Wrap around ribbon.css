@@ -1,0 +1,45 @@
+/*HTML*/
+
+<div class="content">
+  <div class="menu"></div>
+</div>
+
+/*CSS*/
+
+html, body {
+  min-height: 100%;
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+  background: #f0f0f0;
+  height: 20em;
+}
+
+.menu{
+  width: 100%;
+  height: 4em;
+  background: #333;
+  position: relative;
+  padding: 0 2em;
+  left: -2em;
+}
+
+.menu:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  border-top: 1em solid #999;
+  border-right: 1em solid transparent;
+  border-left: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+}
+
+.menu:after {
+  right: 0;
+  border-left: 1em solid #999;
+}
