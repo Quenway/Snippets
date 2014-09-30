@@ -1,0 +1,69 @@
+/*HTML*/
+
+<div class="header-links">
+    <ul>
+        <li>	<a href="#">
+						Link
+					</a>
+
+        </li>
+        <li>	<a href="#">
+						Link
+					</a>
+
+        </li>
+        <li>	<a href="#">
+						Link
+					</a>
+
+        </li>
+        <li>	<a href="#">
+						Link
+					</a>
+
+        </li>
+</div>
+
+
+
+
+/*CSS*/
+
+.header-links {
+    float:right;
+    overflow:hidden;
+}
+.header-links li {
+    position: relative;
+    float:left;
+    font-family:'Oswald', sans-serif;
+    font-size:13px;
+    line-height:16px;
+    text-transform:uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header-links li:first-child {
+    padding-left:0px;
+}
+.header-links li:last-child {
+    padding-right:10px;
+}
+.header-links li a {
+    text-decoration:none;
+    color:#000;
+}
+.header-links li a:hover {
+    color:#313131;
+}
+.header-links li + li::before {
+    content:"|";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: red;
+}
+
+ul, li {
+    list-style-type: none;
+}
