@@ -1,3 +1,9 @@
+<!-- In a typical WordPress theme you output the entire list of comments for a Post/Page
+by using the function wp_list_comments(). This doesn't offer much by the way of
+customizing what HTML markup gets generated for that comment list. To write your own
+markup for the comment list, you can use a callback function as a parameter in
+wp_list_comments(), so it's just as nicely abstracted. -->
+
 //In functions.php
 <?php
 function my_custom_comments($comment, $args, $depth) {
