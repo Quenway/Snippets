@@ -1,0 +1,13 @@
+Once you’ve set up a mixin like border-radius, you can use it in other mixins,
+in this case to make a rectangular div circular:
+
+@mixin circle
+ {
+ @include border-radius(100%);
+ }
+ 
+Usage:
+
+div {
+ @include circle();
+ }
