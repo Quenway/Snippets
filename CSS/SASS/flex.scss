@@ -1,0 +1,15 @@
+Having set up a mixin to set the display property to flex, you’ll also need a mixin to set your flex value:
+
+@mixin flex($values) {
+     -webkit-box-flex: $values;
+ -moz-box-flex:  $values;
+ -ms-flex:  $values;
+ -webkit-flex:  $values;
+ flex:  $values;
+ }
+ 
+Usage:
+
+div {
+ @include flex(1, 2);
+ }
