@@ -1,0 +1,17 @@
+Sass mixins are great for handling settings like flexbox, that have had several
+different syntaxes published at different times.
+
+@mixin flexbox
+ {
+ display:-webkit-box; // old
+ display:-moz-box; // old
+ display:-ms-flexbox; // ie
+ display:-webkit-flex; // new
+ display:flex; // new
+ }
+ 
+Usage:
+
+div {
+ @include flexbox();
+ }
