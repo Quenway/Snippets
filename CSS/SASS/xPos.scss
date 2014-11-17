@@ -1,0 +1,14 @@
+You can also use mixins to simplify syntax. This mixin provides a shorthand for positioning an element along the x axis:
+
+@mixin xPos($x) {
+ -webkit-transform:translateX($x);
+ -moz-transform:translateX($x);
+ -ms-transform:translateX($x);
+ transform:translateX($x);
+ }
+ 
+Usage:
+
+div {
+ @include xPos(50px);
+ }
