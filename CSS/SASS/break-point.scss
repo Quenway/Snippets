@@ -1,0 +1,28 @@
+By using the @content statement, we can even pull in content, and set up all our break points by keyword.
+You shouldn’t set break points based on devices, but for the sake of clarity here’s one for desktop and mobile:
+
+@mixin break-point($point)
+ {
+ @if $point == desktop{
+ @media only screen and (max-width:50em)
+ {
+ @content;
+ }
+ }
+ @else if $point == mobile{
+ @media only screen and (max-width:20em)
+ {
+ @content;
+ }
+ }
+ }
+ 
+Usage:
+
+div {
+ margin:5em;
+ @include break-point(mobile)
+ {
+ margin:2em;
+ }
+}
