@@ -1,0 +1,28 @@
+If you want to stay on-trend, you can use this mixin to create the
+ghost button we built a couple of weeks ago.
+The &:hover allows us to specify the hover state:
+
+@mixin ghost-button($font, $font-size, $font-color, $border-size, $border-color, $padding, $transition-speed, $hover-color)
+ {
+ display:inline-block;
+ text-decoration:none;
+ text-transform:uppercase;
+ font-family: $font;
+ font-size: $font-size;
+ color:$font-color;
+ border:$border-size solid $border-color;
+ padding:$padding;
+ -webkit-transition: color $transition-speed, background $transition-speed;
+ transition: color $transition-speed, background $transition-speed;
+ &:hover
+ {
+ background:$border-color;
+ color:$hover-color;
+ }
+ }
+ 
+Usage:
+
+div {
+ @include ghost-button(“Trebuchet”, 12px, #ffffff, 5px, #34dec6, 4px, 300ms, #000000 );
+ }
