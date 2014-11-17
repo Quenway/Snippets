@@ -1,0 +1,13 @@
+This great mixin lets you specify the values of a box-shadow once, without worrying about vendor prefixes:
+
+@mixin box-shadow( $h: 10px , $v: 10px , $b: 0px , $s: 0px , $c: #000000 ) {
+     -webkit-box-shadow: $h $v $b $s $c;
+ -moz-box-shadow: $h $v $b $s $c;
+ box-shadow: $h $v $b $s $c;
+ }
+ 
+Usage:
+
+div {
+ @include box-shadow(8px, 8px);
+ }
