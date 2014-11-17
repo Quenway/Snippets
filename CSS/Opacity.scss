@@ -1,0 +1,13 @@
+Frequently, you want to set not only vendor prefixes but use different syntax altogether.
+This mixin sets opacity for current browsers and older IE:
+
+@mixin opacity($opacity) {
+     opacity: $opacity;
+    filter: alpha(opacity=($opacity * 100));
+ }
+ 
+Usage:
+
+div {
+ @include opacity(0.5);
+ }
