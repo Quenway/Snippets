@@ -1,0 +1,13 @@
+Mixins are great for progressive enhancement. This mixin sets the font-size in pixels,
+then overwrites that by setting it in rems. rems will only be used if the browser in question supports them:
+
+@mixin font-size($size) {
+     font-size:$size;
+ font-size: ($size / 16px) * 1rem;
+ }
+ 
+Usage:
+
+div {
+ @include font-size(14px);
+ }
