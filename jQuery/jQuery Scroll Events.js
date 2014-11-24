@@ -1,4 +1,8 @@
-Increasingly, developers are spicing up web pages by creating interactive transitions as a user scrolls through a page. You might notice a link to a related article pops up when you finish reading an editorial on the New York Times, or background images shifting as you progress through a page’s sections. Here’s an example to set up an event listener using jQuery that updates sidebar content with a date:
+// Increasingly, developers are spicing up web pages by creating interactive transitions
+// as a user scrolls through a page. You might notice a link to a related article pops up
+// when you finish reading an editorial on the New York Times, or background images shifting
+// as you progress through a page’s sections. Here’s an example to set up an event listener
+// using jQuery that updates sidebar content with a date:
 
 $(window).on(“scroll resize”, function(){
   var pos=$(‘#date’).offset();
