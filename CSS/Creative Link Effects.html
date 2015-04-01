@@ -1,0 +1,102 @@
+// Source: http://tympanus.net/Development/CreativeLinkEffects/
+
+<section class="color-7">
+    <nav class="cl-effect-21" id="cl-effect-21"> <a href="#cl-effect-21">Chatoyant</a>
+     <a href="#cl-effect-21">Ineffable</a>
+     <a href="#cl-effect-21">Efficiency</a>
+    </nav>
+</section>
+
+section {
+    margin: 0 auto;
+    padding: 10em 3em;
+    text-align: center;
+    display: block;
+}
+.color-7 {
+    background: #3fa46a;
+}
+.cl-effect-21 a:hover, .cl-effect-21 a:focus {
+    color: #fff;
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1.35em;
+}
+.cl-effect-21 a {
+    padding: 10px;
+    color: #237546;
+    font-weight: 700;
+    text-shadow: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.cl-effect-21 a:hover::before, .cl-effect-21 a:focus::before, .cl-effect-21 a:hover::after, .cl-effect-21 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.cl-effect-21 a:hover::before, .cl-effect-21 a:focus::before, .cl-effect-21 a:hover::after, .cl-effect-21 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.cl-effect-21 a::before {
+    top: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.cl-effect-21 a::before, .cl-effect-21 a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content:'';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.cl-effect-21 a::after {
+    bottom: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+.cl-effect-21 a::before, .cl-effect-21 a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content:'';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
